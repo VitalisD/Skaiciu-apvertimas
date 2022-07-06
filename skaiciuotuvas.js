@@ -1,3 +1,4 @@
+'use-strict';
 document.querySelector('#suma').addEventListener('click', function (){
     //console.log ('mygtukas');
     let skaičius1
@@ -42,4 +43,14 @@ document.querySelector('#dalyba').addEventListener('click', function (){
     atsakymas4 = skaičius1 / skaičius2
     console.log (atsakymas4)
     document.querySelector('.rezultatas').innerHTML = (atsakymas4);
+});
+document.querySelector('#liekana').addEventListener('click', function (){
+    let skaičius1
+    let skaičius2
+    skaičius1 = parseFloat(document.querySelector('#skaičius1').value);
+    skaičius2 = parseFloat(document.querySelector('#skaičius2').value);
+    let atsakymas5
+    atsakymas5 = skaičius1 % skaičius2
+    console.log (atsakymas5)
+    document.querySelector('.rezultatas').innerHTML = (atsakymas5);
 });
